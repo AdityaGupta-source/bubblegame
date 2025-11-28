@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.bg-image{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.main{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.work{
+    display: flex;
+    height: 85%;
+    width: 85%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.game-name{
+    font-weight: 900;
+    font-size: 100px;
+    color: #385b38;
+}
+.playnowbutton{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    cursor: pointer;
+    background-color: #489A58;
+    border: none;
+    font-size: 40px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+}
+#leaderboard-button{
+    font-size: 30px;
+    background-color: #56b168;
+    margin-top: 12px;
+}
+.bubble{
+    background-color: rgb(72,104,72);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: background-color 0.15s ease;
+}
+.bubble:hover{
+    background-color: rgb(50, 75,50);
+    cursor: pointer;
+}
+.bottom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+@view-transition {
+    navigation: auto;
+}

@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubble Game</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/landingPage.css">
 </head>
 <body>
+    <img class="bg-image" src="Images/background-image.png" alt="background">
     <div class="main">
         <div class="work">
-            <div id="paneltop">
-                <div class="score">
-                    <div class="elem">Hit</div>
-                    <div class="box js-hit">5</div>
+            <div class="top">
+                <div class="game-name">
+                    Bubble Game
                 </div>
-                <div class="score">
-                    <div class="elem">Timer</div>
-                    <div class="box js-timer">60</div>
+                <div class="playnow">
+                    <a href="index.html" class="linking-index-landing">
+                        <button class="playnowbutton">
+                            Play Now <span class="play-arrow">&#9658;</span>
+                        </button>
+                    </a>
                 </div>
-                <div class="score">
-                    <div class="elem">Current-Score</div>
-                    <div class="box js-score">0</div>
-                </div>
-                <div class="score">
-                    <div class="elem">High-Score</div>
-                    <div class="box js-high-score">0</div>
+                <div class="leaderboard">
+                    <a href="" class="linking-index-leaderboard">
+                        <button class="playnowbutton" id="leaderboard-button">
+                            leaderboard 
+                        </button>
+                    </a>
                 </div>
             </div>
-            <div id="panelbottom">
-                <div class="bubble">6</div>           
+            <div class="bottom">
+                <div class="bubble">6</div>
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/landingpage.js"></script>
 </body>
 </html>
